@@ -1,28 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>pyetimeoffice — ETimeOffice Python Integration</title>
+
+  <meta
+    name="description"
+    content="Python integration library for ETimeOffice biometric attendance systems, APIs, Django HRMS integration, attendance synchronization, and biometric workflows."
+  />
+
+  <meta
+    name="keywords"
+    content="ETimeOffice API, ETimeOffice integration, biometric attendance, Python attendance API, Django HRMS integration, attendance synchronization"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(96, 165, 250, 0.3);
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .highlight {
+      color: #3b82f6;
+    }
+
+    .subtitle {
+      max-width: 850px;
+      margin: auto;
+      font-size: 20px;
+      color: #cbd5e1;
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+
+    .btn-secondary {
+      border: 1px solid #334155;
+      color: #e2e8f0;
+      background: #111827;
+    }
+
+    .btn-secondary:hover {
+      background: #1e293b;
+    }
+
+    .section {
+      margin-top: 80px;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 28px;
+      border-radius: 20px;
+      border: 1px solid #1e293b;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #3b82f6;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #60a5fa;
+    }
+
+    .install-box {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 30px;
+      overflow-x: auto;
+    }
+
+    code {
+      color: #93c5fd;
+      font-size: 16px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 100px;
+      padding: 30px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>pyetimeoffice</h1>
+  <div class="container">
 
-  <p>
-    Python integration library for ETimeOffice biometric attendance systems.
-  </p>
+    <section class="hero">
+      <div class="badge">
+        Open Source Python Library
+      </div>
 
-  <p>
-    Supports attendance synchronization, punch data APIs,
-    Django HRMS integration, and biometric attendance workflows.
-  </p>
+      <h1>
+        pyetimeoffice
+        <span class="highlight">
+          ETimeOffice Python Integration
+        </span>
+      </h1>
 
-  <a href="https://github.com/KSreethul/pyetimeoffice">
-    GitHub Repository
-  </a>
+      <p class="subtitle">
+        Python integration library for ETimeOffice biometric attendance systems,
+        attendance APIs, Django HRMS integrations, employee punch synchronization,
+        and biometric attendance workflows.
+      </p>
 
-  <br><br>
+      <div class="buttons">
+        <a
+          href="https://github.com/KSreethul/pyetimeoffice"
+          class="btn btn-primary"
+        >
+          GitHub Repository
+        </a>
 
-  <a href="https://pypi.org/project/pyetimeoffice/">
-    PyPI Package
-  </a>
+        <a
+          href="https://pypi.org/project/pyetimeoffice/"
+          class="btn btn-secondary"
+        >
+          PyPI Package
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Features</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Attendance APIs</h3>
+          <p>
+            Download punch data, MCID records, and in/out attendance logs
+            from ETimeOffice systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Django HRMS Integration</h3>
+          <p>
+            Easily integrate biometric attendance workflows into Django HRMS
+            and ERP platforms.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Biometric Synchronization</h3>
+          <p>
+            Automate employee attendance synchronization and attendance tracking workflows.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Python Friendly</h3>
+          <p>
+            Lightweight Python API client with clean methods and normalized date handling.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Installation</h2>
+
+      <div class="install-box">
+        <code>
+          pip install pyetimeoffice
+        </code>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why pyetimeoffice?</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Attendance Automation</h3>
+          <p>
+            Build attendance automation systems using ETimeOffice APIs and Python.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Payroll Integration</h3>
+          <p>
+            Use attendance punch data directly in payroll and employee management workflows.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Open Source</h3>
+          <p>
+            Fully open-source Python package designed for developers and HRMS platforms.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        pyetimeoffice — ETimeOffice Python Integration Library
+      </p>
+
+      <p>
+        Built for biometric attendance systems, HRMS integrations, and attendance APIs.
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
