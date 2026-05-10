@@ -2,23 +2,36 @@
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-
 [project]
 name = "pyetimeoffice"
 version = "0.1.0"
-description = "ETimeOffice biometric Python integration library"
+
+description = "Python integration library for ETimeOffice biometric attendance systems"
+
 readme = "README.md"
 requires-python = ">=3.10"
+
 license = { text = "LGPL-3.0-only" }
+
 authors = [
-{ name = "Sreethul Krishna", email = "sreethulkrishna24@gmail.com" }
+    { name = "Sreethul Krishna", email = "sreethulkrishna24@gmail.com" }
 ]
-keywords = ["biometric", "etimeoffice", "attendance", "api", "pyetimeoffice"]
 
+keywords = [
+    "etimeoffice",
+    "etimeoffice api",
+    "etimeoffice integration",
+    "biometric attendance",
+    "attendance system",
+    "python biometric library",
+    "attendance api"
+]
 
-dependencies = ["requests>=2.0"]
-
+dependencies = [
+    "requests>=2.0"
+]
 
 [project.urls]
 Homepage = "https://github.com/KSreethul/pyetimeoffice"
+Documentation = "https://github.com/KSreethul/pyetimeoffice#readme"
 "Bug Tracker" = "https://github.com/KSreethul/pyetimeoffice/issues"
